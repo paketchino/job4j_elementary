@@ -1,21 +1,29 @@
 package ru.job4j.calculator;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+
 
 public class Fit {
 
-    public static double manWeight (short height) {
-        double rsl = (179 - 100) * 1.15;
+    public static double manWeight(float height) {
+        double rsl = (height - 100) * 1.15;
         return rsl;
     }
 
-    public  static double womanWeight(short height) {
-        double rsl =  (170 - 110) * 1.15;
+    public static double womanWeight(float height1) {
+        double rsl = (height1 - 110) * 1.15;
         return rsl;
     }
-    public static void main(String [] args) {
-        short height = 179;
+
+    public static void main(String[] args) {
+        float height = 180f;
+        float height1 = 150f;
         double man = Fit.manWeight(height);
-        double woman = Fit.womanWeight(height);
-        System.out.println("Man 179 is" + man);
-        System.out.println("Woman 170 is " + woman);
+        double woman = Fit.womanWeight(height1);
+        System.out.println("Man " + height + " is " + man);
+        System.out.println("Woman " + height1 + " is " + woman);
     }
 }
+
+
