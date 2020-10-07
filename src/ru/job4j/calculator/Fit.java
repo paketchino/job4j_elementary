@@ -1,8 +1,4 @@
 package ru.job4j.calculator;
-import java.sql.SQLOutput;
-import java.util.Scanner;
-
-
 
 public class Fit {
 
