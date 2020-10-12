@@ -2,17 +2,17 @@ package ru.job4j.condition;
 
 public class Game {
     public static void menu(String name) {
-        String name1 = new String("super mario");
-        String name2 = new String("tanks");
-        String name3 = new String("tetris");
+        String nameOne = new String("super mario");
+        String nameTwo = new String("tanks");
+        String nameThree = new String("tetris");
 
-        if (name1.equals("Super mario")) {
+        if (name.equals("super mario")) {
             System.out.println("Start - super mario");
         }
-        if (name2.equals("tanks")) {
+        if (name.equals("tanks")) {
             System.out.println("Start - tanks");
         }
-        if (name3.equals("tetris")) {
+        if (name.equals("tetris")) {
             System.out.println("Start - tetris");
         }
     }
