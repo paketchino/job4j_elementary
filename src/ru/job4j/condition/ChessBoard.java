@@ -4,8 +4,8 @@ import java.lang.Math;
 public class ChessBoard {
     public static int way(int x1, int y1, int x2, int y2) {
       int result = 0;
-      if ((x2 <= x1) || (y2 >= y1))  {
-          result = Math.abs(y2 - y1);
+      if (Math.abs(x2 - x1) == Math.abs(y2 - y1)) {
+          result = Math.abs(x2 - x1);
        }
        return result;
     }
