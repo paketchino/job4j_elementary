@@ -19,6 +19,6 @@ public class Board {
         public static void main(String[] args) {
             paint(3, 3);
             System.out.println();
-            paint(5, 4);
+            paint(5 , 4);
         }
     }
