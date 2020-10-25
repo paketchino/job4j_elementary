@@ -10,6 +10,23 @@ public class FitnessTest {
     public void powerKachki() {
         int rsl = Fitness.calc(90, 90);
         assertThat(rsl, is(1));
+    }
 
+    @Test
+    public void whenIvanLessByFewNik() {
+        int rsl = Fitness.calc(50, 90);
+        assertThat(rsl, is(2));
+    }
+
+    @Test
+    public void whenIvanGreatNik() {
+        int rsl = Fitness.calc(95, 90);
+        assertThat(rsl, is(0));
+    }
+
+    @Test
+    public void whenIvanLessByOneNik() {
+        int rsl = Fitness.calc(90, 95);
+        assertThat(rsl, is(1));
     }
 }
