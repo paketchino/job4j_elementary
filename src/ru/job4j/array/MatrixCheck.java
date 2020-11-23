@@ -39,7 +39,6 @@ public class MatrixCheck {
                    result = true;
                    break;
                }
-                break;
             }
         }
         return result;
