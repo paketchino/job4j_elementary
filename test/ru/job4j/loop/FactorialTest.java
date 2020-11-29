@@ -12,6 +12,8 @@ public class FactorialTest {
         int rsl = Factorial.calc(5);
         assertThat(rsl, is(120));
     }
+
+    @SuppressWarnings("checkstyle:EmptyLineSeparator")
     @Test
     public void whenCalculateFactorialForZeroThenOne() {
         int excepted = 1;

@@ -13,6 +13,8 @@ public class MultiMaxTest {
         int result = MultiMax.max(1, 4, 2);
         assertThat(result, is(4));
     }
+
+    @SuppressWarnings("checkstyle:EmptyLineSeparator")
     @Test
     public void whenFirstSecondThirdMax() {
         int result = MultiMax.max(3, 3, 3);

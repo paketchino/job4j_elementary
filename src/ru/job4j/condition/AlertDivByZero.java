@@ -6,9 +6,9 @@ public class AlertDivByZero {
         possibleDiv(0);
     }
 
-    public static void possibleDiv(int numberTwo) {
-        if (numberTwo == 0) {
-            System.out.println("This is negative numbers, if i < 0 ");
+    public static void possibleDiv(int i) {
+        if (i == 0) {
+            System.out.println(i);
         }
     }
 

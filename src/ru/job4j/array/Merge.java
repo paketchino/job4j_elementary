@@ -1,10 +1,14 @@
 package ru.job4j.array;
 
+/**
+ * Сортировка слиянием
+ * ИНдыксы для массивов
+ */
+
 public class Merge {
     public static int[] merge(int[] left, int[] right) {
         int[] rsl = new int[left.length + right.length];
-        int l = 0, r = 0; // ИНДЕКСЫ ДЛЯ МАССИВОВ
-
+        int l = 0, r = 0;
         for (int i = 0; i < rsl.length; i++) {
             if (l > left.length - 1) {
                 int a = right[r];

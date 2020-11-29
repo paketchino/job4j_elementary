@@ -1,5 +1,9 @@
 package ru.job4j.sort;
 
+/**
+ * хранилище для хранения монет для сдачи
+ */
+
 import java.util.Arrays;
 
 public class Machine {
@@ -12,7 +16,7 @@ public class Machine {
         for (int i = 0; i < coins.length; i++) {
             while (sum >= coins[i]) {
                 sum = sum - coins[i];
-                rsl[size] = coins[i]; // хранилище для хранения монет для сдачи
+                rsl[size] = coins[i];
                 size++;
             }
 

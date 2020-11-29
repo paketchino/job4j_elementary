@@ -2,10 +2,15 @@ package ru.job4j.loop;
 
 import jdk.swing.interop.SwingInterOpUtils;
 
+/**
+ * создали ряд который не превышает высоты  доски
+ *  аналогично создали ячейку которая не превышает ширину доски
+ */
+
 public class Board {
     public static void paint(int width, int height) {
-        for (int row = 0; row < height; row++) {   // создали ряд который не превышает высоты  доски
-            for (int cell = 0; cell < width; cell++) { // аналогично создали ячейку которая не превышает ширину доски
+        for (int row = 0; row < height; row++) {
+            for (int cell = 0; cell < width; cell++) {
             if ((cell + row) % 2 == 0) {
                 System.out.print("X");
             } else {
@@ -19,6 +24,6 @@ public class Board {
         public static void main(String[] args) {
             paint(3, 3);
             System.out.println();
-            paint(5 , 4);
+            paint(5, 4);
         }
     }
